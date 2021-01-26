@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 deploy: 
 type: git
-repository: https://github.com/Kaijun/hexo-theme-huxblog.git
+repository: git@github.com:LSone1/blog.git
 branch: master
