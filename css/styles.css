@@ -20,7 +20,7 @@ body {
   display: flex;
 }
 
-.nav-warpper>.left-side>div {
+.nav-warpper > .left-side > div {
   margin-right: 20px;
   font-size: 0.9em;
   text-transform: uppercase;
@@ -56,12 +56,14 @@ body {
 
 /*Protfolio Styles*/
 .portfolio-items-warpper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 28px;
 }
 
 .portfolio-item-warpper {
-  position: relative;
+  flex: 30%;
 }
 
 .portfolio-img-background {
@@ -73,21 +75,25 @@ body {
 }
 
 .img-text-warpper {
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  padding-left: 170px;
-  padding-right: 170px;
+  float: left;
+  position: relative;
+  left: 50%;
+  top: 35%;
 }
-
+.logo-warpper {
+  position: relative;
+}
+.logo-warpper::after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+}
 .logo-warpper img {
-  width: 200%;
-  margin-top: 20px;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -15%;
 }
 
 .img-text-warpper .subtitle {
