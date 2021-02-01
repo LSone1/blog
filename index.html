@@ -156,15 +156,4 @@
       <p>Build with ♥ | Copyright © 2021 LSone1</p>
     </footer>
   </body>
-
-  <script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-warpper');
-
-    portfolioItems.forEach((portfolioItem) => {
-      portfolioItem.addEventListener('mouseover', () => {
-        console.log(portfolioItem.childNodes[1].classList);
-        portfolioItem.childNodes[1].classList.remove('.img-darken');
-      });
-    });
-  </script>
 </html>

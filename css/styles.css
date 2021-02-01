@@ -64,6 +64,10 @@ body {
 
 .portfolio-item-warpper {
   flex: 30%;
+  transition: 1s;
+}
+.portfolio-item-warpper:hover {
+  filter: brightness(10%);
 }
 
 .portfolio-img-background {
