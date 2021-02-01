@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is a test page" />
+    <title>My website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-warpper">
+        <div class="left-side">
+          <div class="nav-link-warpper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="nav-link-warpper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            <div>LSone1</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-warpper">
+        <div class="portfolio-items-warpper">
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+
+          <div class="portfolio-item-warpper">
+            <div class="img-text-warpper">
+              <div class="logo-warpper">
+                <img src="images/favicon.ico" />
+              </div>
+              <div class="subtitle">I built the website use HTML and CSS.</div>
+            </div>
+            <div
+              class="portfolio-img-background"
+              style="background-image: url('images/wallhaven-2evl3g.png')"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Build with ♥ | Copyright © 2021 LSone1</p>
+    </footer>
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-warpper');
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove('.img-darken');
+      });
+    });
+  </script>
+</html>

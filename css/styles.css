@@ -1,0 +1,149 @@
+/* Master Styles*/
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*Nav Styles*/
+.nav-warpper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-warpper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-warpper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-warpper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-warpper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-warpper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+/*Protfolio Styles*/
+.portfolio-items-warpper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 28px;
+}
+
+.portfolio-item-warpper {
+  flex: 30%;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-warpper {
+  float: left;
+  position: relative;
+  left: 50%;
+  top: 35%;
+}
+.logo-warpper {
+  position: relative;
+}
+.logo-warpper::after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.logo-warpper img {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -15%;
+}
+
+.img-text-warpper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+/*Needs to be more specific with selector */
+.img-text-warpper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/*About page*/
+.two-column-warpper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-warpper img {
+  width: 100%;
+}
+
+.profile-content-warpper {
+  padding: 20px;
+}
+
+.profile-content-warpper h1 {
+  color: lightseagreen;
+}
+
+footer {
+  background: #346;
+  position: relative;
+  bottom: 0;
+  display: block;
+  height: 58px;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 16px;
+  color: #080808;
+  font-size: 18px;
+}
