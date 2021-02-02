@@ -1,7 +1,8 @@
 /* Master Styles*/
-body {
-  font-family: 'Lato', sans-serif;
+* {
+  font-family: 'PT Serif', serif;
   margin: 0px;
+  padding: 0px;
 }
 
 .container {
@@ -14,15 +15,28 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 38px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
 }
 
 .left-side {
   display: flex;
 }
 
-.nav-warpper > .left-side > div {
+.right-side {
+  display: flex;
+}
+
+.nav-warpper>.left-side>div {
   margin-right: 20px;
-  font-size: 0.9em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.nav-warpper>.right-side>div {
+  margin-right: 20px;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -33,7 +47,7 @@ body {
 }
 
 .nav-link-warpper a {
-  color: #8a8a8a;
+  color: #333;
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -66,6 +80,7 @@ body {
   flex: 30%;
   transition: 1s;
 }
+
 .portfolio-item-warpper:hover {
   filter: brightness(10%);
 }
@@ -84,15 +99,18 @@ body {
   left: 50%;
   top: 35%;
 }
+
 .logo-warpper {
   position: relative;
 }
+
 .logo-warpper::after {
   content: ' ';
   display: block;
   width: 64px;
   height: 64px;
 }
+
 .logo-warpper img {
   position: absolute;
   width: 64px;
