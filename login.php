@@ -12,9 +12,7 @@ $password = $_POST["password"];
 $uid = $_POST["id"];
 
 //Do query
-$query  = "SELECT username, password ";
-$query .= "FROM users ";
-$query .= "where username = '$username' &&  password = '$password'";
+$query  = "SELECT username, password FROM users WHERE username = '$username' &&  password = '$password'";
 
 $result = mysqli_query($connection, $query);
 
