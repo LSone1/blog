@@ -15,6 +15,11 @@
   display: flex;
   justify-content: space-between;
   padding: 38px;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: hsla(0, 0%, 97%, .8);
 }
 
 .left-side {
@@ -27,13 +32,11 @@
 
 .nav-warpper>.left-side>div {
   margin-right: 20px;
-  font-size: 1em;
   text-transform: uppercase;
 }
 
 .nav-warpper>.right-side>div {
-  margin-right: 20px;
-  font-size: 1em;
+  margin-left: 20px;
   text-transform: uppercase;
 }
 
