@@ -147,12 +147,17 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.portfolio-img-warpper {
+  padding-left: 38px;
+}
+
 .profile-image-warpper img {
   width: 100%;
 }
 
 .profile-content-warpper {
-  padding: 20px;
+  padding: 45px;
+  line-height: 2.5;
 }
 
 .profile-content-warpper h1 {
