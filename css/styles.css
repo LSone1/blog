@@ -17,7 +17,7 @@
   padding: 38px;
   font-size: 18px;
   position: fixed;
-  width:100%;
+  width: 100%;
   top: 0;
   z-index: 1;
   background-color: hsla(0, 0%, 97%, .8);
@@ -71,6 +71,10 @@
 }
 
 /*Protfolio Styles*/
+.content-warpper {
+  margin-top: 100px;
+}
+
 .portfolio-items-warpper {
   display: flex;
   flex-direction: row;
